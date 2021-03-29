@@ -2,7 +2,13 @@
 
 ### Este projeto esta em andamento 😎
 
-O foodfy, está sendo desenvolvido como parte dos desafios no LaunchBase da Rocketseat. A cada fase que avançamos é composto um novo desafio para nós alunos, assim podemos por em prática muito do que foi ensinado e um pouco a mais.
+O foodfy, está sendo desenvolvido como parte dos desafios no LaunchBase da Rocketseat. A cada fase que avançamos é composto um novo desafio para nós alunos, assim podemos por em prática muito do que foi ensinado e um pouco mais.
+<br>
+
+### Nova atualização no projeto:
+
+<p>Todas as páginas foram atualizadas e configuradas para serem dinâmicas com Nunjucks.</p>
+
 <br>
 Se desejar você pode acessar as informações do desafio aqui:
 <br> 
@@ -12,7 +18,7 @@ Se desejar você pode acessar as informações do desafio aqui:
 ### O projeto até o momento
 
 <p align="center">
-    <img src="github/page-foodfy.gif">
+    <img src="./github/page-foodfy.gif">
 </p>
 
 #### Até logo 💻👋
