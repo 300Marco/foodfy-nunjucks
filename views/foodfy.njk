@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+
+{% block banner %}
+    <div id="banner">
+        <div id="myBanner" class="banner-content">
+            <div class="banner-text">
+                <h2>As melhores receitas</h2>
+                <p>
+                    Aprenda a construir os melhores pratos
+                    com receitas criadas por profissionais
+                    do mundo inteiro.
+                </p>
+            </div>
+            <div class="banner-chef">
+                <img src="/assets/chef.png" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div id="container">
+            <div class="accesses">
+                <h3>Mais acessadas</h3>
+
+                <div id="cards">
+                    <div class="card">
+                        <img src="/assets/burger.png" alt="Triplo bacon burger">
+                        <h4>Triplo bacon burger</h4>
+                        <p>por Jorge Relato</p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="/assets/pizza.png" alt="Pizza 4 estações">
+                        <h4>Pizza 4 estações</h4>
+                        <p>por Fabiana Melo</p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="/assets/espaguete.png" alt="Espaguete ao alho">
+                        <h4>Espaguete ao alho</h4>
+                        <p>por Júlia Kinoto</p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="/assets/lasanha.png" alt="Lasanha mac n' cheese">
+                        <h4>Lasanha mac n’ cheese</h4>
+                        <p>por Juliano Vieira</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/doce.png" alt="Docinhos pão-do-céu">
+                        <h4>Docinhos pão-do-céu</h4>
+                        <p>por Ricardo Golvea</p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="/assets/asinhas.png" alt="Asinhas de frango ao barbecue">
+                        <h4>Asinhas de frango ao barbecue</h4>
+                        <p>por Vania Steroski</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
