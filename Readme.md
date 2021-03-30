@@ -12,7 +12,16 @@ O foodfy, está sendo desenvolvido como parte dos desafios no LaunchBase da Rock
 <br>
 Se desejar você pode acessar as informações do desafio aqui:
 <br> 
+
 [Desafio LaunchBase - Construindo o Foodfy](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
+
+<br>
+
+O desafio que foi realizado até o momento, você pode verificar aqui:
+<br>
+
+[Desafio LaunchBase - Primeiro servidor](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
+
 <br>
 
 ### O projeto até o momento
