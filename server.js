@@ -21,7 +21,7 @@ server.get("/about", function(require, response) {
 });
 
 server.get("/revenues", function(require, response) {
-    return response.render("revenues");
+    return response.render("revenues", {items: dish});
 });
 
 server.use(function(require, response) {
