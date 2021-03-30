@@ -21,4 +21,12 @@ Se desejar você pode acessar as informações do desafio aqui:
     <img src="./github/page-foodfy.gif">
 </p>
 
+<br>
+
+### Versão Mobile
+
+<p align="center">
+    <img src="./github/page-mobile-foodfy.gif">
+</p>
+
 #### Até logo 💻👋
