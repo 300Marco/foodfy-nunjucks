@@ -5,7 +5,7 @@ module.exports = [
         name_chef: "por Jorge Relato"
     },
     {
-        id: "pizza",
+        id: "pizza.png",
         title: "Pizza 4 estações",
         name_chef: "por Fabiana Melo"
     },
@@ -35,7 +35,7 @@ module.exports = [
         name_chef: "por Jorge Relato"
     },
     {
-        id: "pizza",
+        id: "pizza.png",
         title: "Pizza 4 estações",
         name_chef: "por Fabiana Melo"
     },
