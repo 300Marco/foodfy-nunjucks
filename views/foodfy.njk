@@ -6,7 +6,7 @@
 
 {% block banner %}
     <div id="banner">
-        <div id="myBanner" class="banner-content">
+        <div id="top-space" class="banner-content">
             <div class="banner-text">
                 <h2>As melhores receitas</h2>
                 <p>
@@ -29,40 +29,40 @@
                 <h3>Mais acessadas</h3>
 
                 <div id="cards">
-                    <div class="card">
-                        <img src="/assets/burger.png" alt="Triplo bacon burger">
-                        <h4>Triplo bacon burger</h4>
-                        <p>por Jorge Relato</p>
+                    <div class="card" id="{{items[0].id}}">
+                        <img src="../assets/{{items[0].id}}" alt="{{items[0].title}}">
+                        <h4>{{items[0].title}}</h4>
+                        <p>{{items[0].author}}</p>
                     </div>
                     
-                    <div class="card">
-                        <img src="/assets/pizza.png" alt="Pizza 4 estações">
-                        <h4>Pizza 4 estações</h4>
-                        <p>por Fabiana Melo</p>
-                    </div>
-                    
-                    <div class="card">
-                        <img src="/assets/espaguete.png" alt="Espaguete ao alho">
-                        <h4>Espaguete ao alho</h4>
-                        <p>por Júlia Kinoto</p>
-                    </div>
-                    
-                    <div class="card">
-                        <img src="/assets/lasanha.png" alt="Lasanha mac n' cheese">
-                        <h4>Lasanha mac n’ cheese</h4>
-                        <p>por Juliano Vieira</p>
+                    <div class="card" id="{{items[1].id}}">
+                        <img src="/assets/{{items[1].id}}" alt="{{items[1].title}}">
+                        <h4>{{items[1].title}}</h4>
+                        <p>{{items[1].author}}</p>
                     </div>
 
-                    <div class="card">
-                        <img src="/assets/doce.png" alt="Docinhos pão-do-céu">
-                        <h4>Docinhos pão-do-céu</h4>
-                        <p>por Ricardo Golvea</p>
+                    <div class="card" id="{{items[2].id}}">
+                        <img src="/assets/{{items[2].id}}" alt="{{items[2].title}}">
+                        <h4>{{items[2].title}}</h4>
+                        <p>{{items[2].author}}</p>
                     </div>
-                    
-                    <div class="card">
-                        <img src="/assets/asinhas.png" alt="Asinhas de frango ao barbecue">
-                        <h4>Asinhas de frango ao barbecue</h4>
-                        <p>por Vania Steroski</p>
+
+                    <div class="card" id="{{items[3].id}}">
+                        <img src="/assets/{{items[3].id}}" alt="{{items[3].title}}">
+                        <h4>{{items[3].title}}</h4>
+                        <p>{{items[3].author}}</p>
+                    </div>
+
+                    <div class="card" id="{{items[4].id}}">
+                        <img src="/assets/{{items[4].id}}" alt="{{items[4].title}}">
+                        <h4>{{items[4].title}}</h4>
+                        <p>{{items[4].author}}</p>
+                    </div>
+
+                    <div class="card" id="{{items[5].id}}">
+                        <img src="/assets/{{items[5].id}}" alt="{{items[5].title}}">
+                        <h4>{{items[5].title}}</h4>
+                        <p>{{items[5].author}}</p>
                     </div>
                 </div>
             </div>
