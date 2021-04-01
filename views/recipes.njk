@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+    <title>Receita</title>
+{% endblock %}
+
+{% block activeLinks %}
+    <a href="/about">Sobre</a>
+    <a href="/revenues" class="active">Receitas</a>
+{% endblock %}
+
+{% block content %}
+
+    <main>
+        <div id="container">
+            <div id="top-space" class="recipes-image">
+                <div class="image" style="background-image: url(../assets/{{items.id}})" alt="{{ items.title }}"></div>
+            </div>
+
+            <div class="recipes-title">
+                <h2>{{ items.title }}</h2>
+                <span class="name-chef">{{ items.author }}</span>
+            </div>
+
+            <div class="recipes-info">
+                <div class="ingredients">
+                    <h3>
+                        Ingredientes 
+                        <span class="btn-ingredients" onclick="hiddeIng()">esconder</span>
+                    </h3>
+                    <div id="section-ingredients" class="">
+                        <ul>
+
+                            {% for ingredient in items.ingredientes %}
+                                <li>{{ingredient}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="preparation">
+                    <h3>
+                        Modo de preparo 
+                        <span class="btn-preparation" onclick="hiddePre()">esconder</span>
+                    </h3>
+                        <div id="section-preparation" class="hidde">
+                        
+                        {% for preparation in items.preparation %}
+                            <p>{{ preparation }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="information">
+                    <h3>Informações adicionais 
+                        <span class="btn-information" onclick="hiddeInf()"">esconder</span>
+                    </h3>
+                        <p>
+                    <div id="section-information" class="">
+                        <p>{{items.information}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
