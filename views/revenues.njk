@@ -4,6 +4,11 @@
     <title>Receitas</title>
 {% endblock %}
 
+{% block activeLinks %}
+    <a href="/about">Sobre</a>
+    <a href="/revenues" class="active">Receitas</a>
+{% endblock %}
+
 {% block content %}
         <main>
             <div id="container">
@@ -13,7 +18,7 @@
                             <div class="card" id="{{item.id}}">
                                 <img src="../assets/{{item.id}}" alt="{{item.title}}">
                                 <h4>{{item.title}}</h4>
-                                <p>{{item.name_chef}}</p>
+                                <p>{{item.author}}</p>
                             </div>
                         {% endfor %}
                     </div>
@@ -21,7 +26,7 @@
             </div>
         </main>
 
-        <div class="modal-overlay">
+        {# <div class="modal-overlay">
             <div class="modal">
                 <div class="modal-content">
                     <img src="" alt="" />
@@ -32,5 +37,5 @@
                     </span>              
                 </div>
             </div>
-        </div>
+        </div> #}
 {% endblock %}
