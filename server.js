@@ -1,7 +1,7 @@
-const { response } = require("express");
+const { response, request } = require("express");
 const express = require("express");
 const nunjucks = require("nunjucks");
-const dish = require("./data");
+const data = require("./data");
 
 const server = express();
 
@@ -10,14 +10,15 @@ server.set("view engine", "njk");
 
 nunjucks.configure("views", {
     express: server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 });
 
-server.get("/", function(require, response) {
-    return response.render("foodfy",{items: dish});
+server.get("/", function(request, response) {
+    return response.render("foodfy",{items: data});
 });
 
-server.get("/about", function(require, response) {
+server.get("/about", function(request, response) {
     const about = {
         infos: [
             {
@@ -44,11 +45,37 @@ server.get("/about", function(require, response) {
     return response.render("about", {about: about});
 });
 
-server.get("/revenues", function(require, response) {
-    return response.render("revenues", {items: dish});
+server.get("/revenues", function(reqrequestuire, response) {
+    return response.render("revenues", {items: data});
 });
 
-server.use(function(require, response) {
+server.get("/recipes/:id", function(request, response) {
+    const id = request.params.id;
+
+    const recipes = data.find(function(recipes) {
+        if(recipes.id == id) {
+            return true;
+        };
+    });
+
+    if(!recipes) {
+        return response.send("Recipes not found");
+    }
+
+    return response.render("recipes", {items: recipes});
+});
+
+// server.get("/recipes/:index", function (request, response) {
+//     const recipes = []; // Array de receitas carregadas do data.js
+//     const recipeIndex = request.params.index;
+
+
+
+//     return response.render("recipes", {items: recipeIndex});
+//     // console.log(data.recipes[0].id);
+// });
+
+server.use(function(request, response) {
     response.status(404).render("not-found");
 });
 
