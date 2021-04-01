@@ -26,13 +26,15 @@
                     </a>
                 </h1>
 
-                <a href="#" class="icon" onclick="myfunction()">
+                <a href="#" class="icon" onclick="navbar()">
                     <i class="fas fa-bars"></i>
                 </a>
 
                 <div id="myNav" class="nav">
-                    <a href="/about">Sobre</a>
-                    <a href="/revenues">Receitas</a>
+                    {% block activeLinks %}
+                        <a href="/about">Sobre</a>
+                        <a href="/revenues">Receitas</a>
+                    {% endblock %}
                 </div>
             </nav>
 
