@@ -59,10 +59,18 @@ server.get("/recipes/:id", function(request, response) {
     });
 
     if(!recipes) {
-        return response.send("Recipes not found");
+        return response.render("not-found");
     }
 
     return response.render("recipes", {items: recipes});
+});
+
+server.use(function(request, response) {
+    response.status(404).render("not-found");
+});
+
+server.listen(5000, function() {
+    console.log("Server is running");
 });
 
 // server.get("/recipes/:index", function (request, response) {
@@ -74,11 +82,3 @@ server.get("/recipes/:id", function(request, response) {
 //     return response.render("recipes", {items: recipeIndex});
 //     // console.log(data.recipes[0].id);
 // });
-
-server.use(function(request, response) {
-    response.status(404).render("not-found");
-});
-
-server.listen(5000, function() {
-    console.log("Server is running");
-});

@@ -651,7 +651,13 @@ footer p {
     width: 100%;
     top: 0;
     right: 0;
-    background: rgb(253, 253, 253);
+}
+
+.error-404 {
+    background: rgb(253, 253, 253) url(../assets/test.png) no-repeat;
+    background-size: 80%;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .error {
@@ -691,3 +697,34 @@ footer p {
     font-size: 19px;
     margin-right: 13px;
 }
+
+.info-error {
+    position: relative;
+    padding-bottom: 23px;
+    width: 200px;
+    margin: 18px auto;
+}
+
+.img-Smoke {
+    position: absolute;
+    top: -57px;
+    left: 83px;
+    width: 36px;
+    height: 41px;
+}
+
+.img-pan {
+    position: absolute;
+    top: 18px;
+    left: 28px;
+    width: 166px;
+}
+
+.img-fire {
+    position: absolute;
+    top: 48px;
+    left: 68px;
+    width: 58px;
+}
+
+
