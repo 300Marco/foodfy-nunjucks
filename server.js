@@ -45,24 +45,38 @@ server.get("/about", function(request, response) {
     return response.render("about", {about: about});
 });
 
-server.get("/revenues", function(reqrequestuire, response) {
+server.get("/revenues", function(request, response) {
     return response.render("revenues", {items: data});
 });
 
-server.get("/recipes/:id", function(request, response) {
-    const id = request.params.id;
+// server.get("/recipes/:id", function(request, response) {
+//     const id = request.params.id;
 
-    const recipes = data.find(function(recipes) {
-        if(recipes.id == id) {
-            return true;
-        };
-    });
+//     const recipes = data.find(function(recipes) {
+//         if(recipes.id == id) {
+//             return true;
+//         };
+//     });
 
-    if(!recipes) {
+//     if(!recipes) {
+//         return response.render("not-found");
+//     }
+
+//     return response.render("recipes", {items: recipes});
+// });
+
+server.get("/recipes/:index", function(request, response) {
+    const recipes = data;
+    const recipeIndex = request.params.index;
+    let recipesItems = (recipes[recipeIndex]);
+
+    if(recipesItems == undefined) {
         return response.render("not-found");
     }
 
-    return response.render("recipes", {items: recipes});
+    // console.log({items: recipesItems})
+
+    return response.render("recipes", {items: recipesItems});
 });
 
 server.use(function(request, response) {
