@@ -1,39 +1,16 @@
 const cards = document.querySelectorAll(".card");
 
-// modal info
-// const modalH3 = document.querySelector("h3");
-// const modalSpan = document.querySelector(".name-chef");
-
 for(let card of cards) {
     card.addEventListener("click", function() {
         /* modal functionality*/
         const idIngredients = card.getAttribute("id");
         
         window.location.href = `/recipes/${idIngredients}`;
-
-        // console.log(test)
-
-        // modalOverlay.classList.add("active");
-
-        // modalOverlay.querySelector("img").src = `../assets/${imgId}`;
-
-        // /* modal card */
-        // const cardH4 = card.querySelector("h4").textContent;
-        // const cardP = card.querySelector("p").textContent;
-        
-        // /* modal info */
-        // modalH3.innerHTML = cardH4;
-        // modalSpan.innerHTML = cardP;
     });
 };
 
-// close modal
-// document.querySelector(".close-modal").addEventListener("click", function() {
-//     modalOverlay.classList.remove("active");
-// });
 
-
-// menu responsive
+// responsive menu
 function navbar() {
     const myNav = document.getElementById("myNav");
 
@@ -45,12 +22,8 @@ function navbar() {
 
     const topSpace = document.getElementById("top-space");
 
-    // if(topSpace.className === "banner-content") {
-    //     topSpace.className = topSpace.className + " nav-top";
-    // } else {
-    //     topSpace.className = "banner-content";
-    // }
 
+    // Temporary code to fix the CSS
     if(topSpace.className === "banner-content" || topSpace.className === "recipes-image") {
         topSpace.className = topSpace.className + " nav-top";
     } else if(topSpace.className === "banner-content nav-top") {
@@ -60,6 +33,7 @@ function navbar() {
     }
 };
 
+// hide ingredients
 function hiddeIng() {
     const sectionIng = document.getElementById("section-ingredients");
     const statusName = document.querySelector(".btn-ingredients");
@@ -70,7 +44,7 @@ function hiddeIng() {
         sectionIng.className = "";
     }
 
-    // status name
+    // name status
     if(statusName.innerHTML === "esconder") {
         statusName.innerHTML = "mostrar"
     } else {
@@ -79,6 +53,7 @@ function hiddeIng() {
 
 }
 
+// hide preparation
 function hiddePre() {
     const sectionPre = document.getElementById("section-preparation");
     const statusName = document.querySelector(".btn-preparation");
@@ -97,6 +72,7 @@ function hiddePre() {
     }
 }
 
+// hide information
 function hiddeInf() {
     const sectionInf = document.getElementById("section-information");
     const statusName = document.querySelector(".btn-information");
