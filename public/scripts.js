@@ -7,10 +7,11 @@ const cards = document.querySelectorAll(".card");
 for(let card of cards) {
     card.addEventListener("click", function() {
         /* modal functionality*/
-        const imgId = card.getAttribute("id");
+        const idIngredients = card.getAttribute("id");
+        
+        window.location.href = `/recipes/${idIngredients}`;
 
-        window.location.href = `/recipes/${imgId}`;
-
+        // console.log(test)
 
         // modalOverlay.classList.add("active");
 
