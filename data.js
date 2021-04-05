@@ -1,6 +1,7 @@
 module.exports = [
     {
-        id: "burger.png",
+        id: 0,
+        image: "burger.png",
         title: "Triplo bacon burger",
         author: "por Jorge Relato",
         ingredientes: [
@@ -26,7 +27,8 @@ module.exports = [
     },
 
     {
-        id: "pizza.png",
+        id: 1,
+        image: "pizza.png",
         title: "Pizza 4 estações",
         author: "por Fabiana Melo",
         ingredientes: [
@@ -56,7 +58,8 @@ module.exports = [
     },
 
     {
-        id: "espaguete.png",
+        id: 2,
+        image: "espaguete.png",
         title: "Espaguete ao alho",
         author: "por Júlia Kinoto",
         ingredientes: [
@@ -83,7 +86,8 @@ module.exports = [
     },
 
     {
-        id: "lasanha.png",
+        id: 3,
+        image: "lasanha.png",
         title: "Lasanha mac n’ cheese",
         author: "por Juliano Vieira",
         ingredientes: [
@@ -106,7 +110,8 @@ module.exports = [
     },
 
     {
-        id: "doce.png",
+        id: 4,
+        image: "doce.png",
         title: "Docinhos pão-do-céu",
         author: "por Ricardo Golvea",
         ingredientes: [
@@ -128,7 +133,8 @@ module.exports = [
     },
     
     {
-        id: "asinhas.png",
+        id: 5,
+        image: "asinhas.png",
         title: "Asinhas de frango ao barbecue",
         author: "por Vania Steroski",
         ingredientes: [
@@ -146,7 +152,8 @@ module.exports = [
     },
 
     {
-        id: "burger.png",
+        id: 6,
+        image: "burger.png",
         title: "Triplo bacon burger",
         author: "por Jorge Relato",
         ingredientes: [
@@ -172,7 +179,8 @@ module.exports = [
     },
 
     {
-        id: "pizza.png",
+        id: 7,
+        image: "pizza.png",
         title: "Pizza 4 estações",
         author: "por Fabiana Melo",
         ingredientes: [
@@ -202,7 +210,8 @@ module.exports = [
     },
 
     {
-        id: "espaguete.png",
+        id: 8,
+        image: "espaguete.png",
         title: "Espaguete ao alho",
         author: "por Júlia Kinoto",
         ingredientes: [
@@ -229,7 +238,8 @@ module.exports = [
     },
 
     {
-        id: "lasanha.png",
+        id: 9,
+        image: "lasanha.png",
         title: "Lasanha mac n’ cheese",
         author: "por Juliano Vieira",
         ingredientes: [
@@ -252,7 +262,8 @@ module.exports = [
     },
 
     {
-        id: "doce.png",
+        id: 10,
+        image: "doce.png",
         title: "Docinhos pão-do-céu",
         author: "por Ricardo Golvea",
         ingredientes: [
@@ -274,7 +285,8 @@ module.exports = [
     },
     
     {
-        id: "asinhas.png",
+        id: 11,
+        image: "asinhas.png",
         title: "Asinhas de frango ao barbecue",
         author: "por Vania Steroski",
         ingredientes: [
