@@ -35,58 +35,46 @@ function navbar() {
 
 // hide ingredients
 function hiddeIng() {
-    const sectionIng = document.getElementById("section-ingredients");
+    const sectionIngredients = document.getElementById("section-ingredients");
     const statusName = document.querySelector(".btn-ingredients");
 
-    if(sectionIng.className === "") {
-        sectionIng.className = sectionIng.className + "hidde";
-    } else {
-        sectionIng.className = "";
-    }
-
-    // name status
+    // Modifying name within span and adding class to div
     if(statusName.innerHTML === "esconder") {
         statusName.innerHTML = "mostrar"
+        sectionIngredients.className += "hidde";
     } else {
         statusName.innerHTML = "esconder";
+        sectionIngredients.className = "";
     }
 
 }
 
 // hide preparation
 function hiddePre() {
-    const sectionPre = document.getElementById("section-preparation");
+    const sectionPreparation = document.getElementById("section-preparation");
     const statusName = document.querySelector(".btn-preparation");
 
-    if(sectionPre.className === "") {
-        sectionPre.className = sectionPre.className + "hidde";
-    } else {
-        sectionPre.className = "";
-    }
-
-    // status name
+    // Modifying name within span and adding class to div
     if(statusName.innerHTML === "esconder") {
-        statusName.innerHTML = "mostrar"
+        statusName.innerHTML = "mostrar";
+        sectionPreparation.className += "hidde";
     } else {
         statusName.innerHTML = "esconder";
+        sectionPreparation.className = "";
     }
 }
 
 // hide information
 function hiddeInf() {
-    const sectionInf = document.getElementById("section-information");
+    const sectionInfo = document.getElementById("section-information");
     const statusName = document.querySelector(".btn-information");
 
-    if(sectionInf.className === "") {
-        sectionInf.className = sectionInf.className + "hidde";
-    } else {
-        sectionInf.className = "";
-    }
-
-    // status name
+    // Modifying name within span and adding class to div
     if(statusName.innerHTML === "esconder") {
-        statusName.innerHTML = "mostrar"
+        statusName.innerHTML = "mostrar";
+        sectionInfo.className += "hidde";
     } else {
         statusName.innerHTML = "esconder";
+        sectionInfo.className = "";
     }
 }
