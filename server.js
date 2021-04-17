@@ -49,22 +49,6 @@ server.get("/revenues", function(request, response) {
     return response.render("revenues", {items: data});
 });
 
-// server.get("/recipes/:id", function(request, response) {
-//     const id = request.params.id;
-
-//     const recipes = data.find(function(recipes) {
-//         if(recipes.id == id) {
-//             return true;
-//         };
-//     });
-
-//     if(!recipes) {
-//         return response.render("not-found");
-//     }
-
-//     return response.render("recipes", {items: recipes});
-// });
-
 server.get("/recipes/:index", function(request, response) {
     const recipes = data;
     const recipeIndex = request.params.index;
@@ -73,8 +57,6 @@ server.get("/recipes/:index", function(request, response) {
     if(recipesItems == undefined) {
         return response.render("not-found");
     }
-
-    // console.log({items: recipesItems})
 
     return response.render("recipes", {items: recipesItems});
 });
@@ -86,13 +68,3 @@ server.use(function(request, response) {
 server.listen(5000, function() {
     console.log("Server is running");
 });
-
-// server.get("/recipes/:index", function (request, response) {
-//     const recipes = []; // Array de receitas carregadas do data.js
-//     const recipeIndex = request.params.index;
-
-
-
-//     return response.render("recipes", {items: recipeIndex});
-//     // console.log(data.recipes[0].id);
-// });
