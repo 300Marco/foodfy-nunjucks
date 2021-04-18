@@ -4,23 +4,26 @@
 
 O foodfy, está sendo desenvolvido como parte dos desafios no LaunchBase da Rocketseat. A cada fase que avançamos é composto um novo desafio para nós alunos, assim podemos por em prática muito do que foi ensinado e um pouco mais.
 <br>
+<p align="center">
+    <img src="./github/mockup.png">
+</p>
 
 ### Nova atualização no projeto:
 
-<p>Todas as páginas foram atualizadas e configuradas para serem dinâmicas com Nunjucks.</p>
+<p>
+    Todas as páginas foram atualizadas e configuradas para serem dinâmicas com Nunjucks.
+</p>
+<p>
+    Ao clicar em qualquer receita da página, será aberta uma nova página, onde ela trará os dados carregados diretamente do Banco de Dados.
+</p>
+
 
 <br>
-Se desejar você pode acessar as informações do desafio aqui:
-<br> 
 
-[Desafio LaunchBase - Construindo o Foodfy](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
-
+Os desafios que foram realizados até o momento, podem ser verificados por aqui:
 <br>
 
-O desafio que foi realizado até o momento, você pode verificar aqui:
-<br>
-
-[Desafio LaunchBase - Primeiro servidor](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03/blob/master/desafios/03-1-primeiro-servidor.md)
+[Desafio LaunchBase - Refatorando Foodfy](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03)
 
 <br>
 
